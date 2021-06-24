@@ -325,6 +325,10 @@ background-image: url("../svg/form-circle.svg")
   text-decoration: none;
 }
 
+.section-name-link:hover, .post-name-link:hover, .product-name-link:hover {
+    color: #636363;
+}
+
 /* TRENDS */
 
 .trend-container{
@@ -452,10 +456,6 @@ background-image: url("../svg/form-circle.svg")
   text-transform: uppercase;
   
   margin-bottom: 25px;
-}
-
-.post-name-link:hover {
-  color: #636363;
 }
 
 .post-list {
