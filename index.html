@@ -57,9 +57,12 @@
  <header class="header">
   <div class="container-header">
      <a class="menu-link" href="/">
-       <img class="header-logo" src="svg/noemi-logo.svg" alt="NOEMI" width="180">    
+       <img class="header-logo" src="svg/noemi-logo.svg" alt="NOEMI" width="180">   
      </a>
     <nav class="menu">
+      <button type="button" class="menu-button">
+          <span class="menu-button-label">Открыть меню</span>
+      </button>
       <ul class="menu-list">
         <li class="menu-list-item">
           <a class="menu-link" href="/">Главная</a>
@@ -82,7 +85,12 @@
       </ul>
     </nav>
   </div>
+  <div class="welcome">
+      <a class="menu-link-mobile" href="/">
+       <img class="header-logo-mobile" src="svg/noemi-logo.svg" alt="NOEMI">   
+     </a>
     <h1 class="welcome-title">Блог о творчестве, спорте и образе жизни</h1>
+  </div>
 </header>
 
 <div class="section">
@@ -423,17 +431,17 @@
       <h3 class="section-name"><a class="section-name-link" href="#">Наши изделия</a></h3>
       <div class="product-cards">
          <article class="product">
-            <picture>
+            <picture >
                <source
                 media="(min-width: 1201px)"
                 srcset="images/shop-item-desk1.jpg">
                <source
-                media="(max-width: 1200px)"
+                media="(min-width: 641px) and (max-width: 1200px)"
                 srcset="images/shop-item-tablet1.jpg">
                 <source
                 media="(max-width: 640px)"
                 srcset="images/shop-item-mobile1.jpg">
-               <img
+               <img class="product-img"
                 src="images/shop-item-desk1.jpg"
                 alt="Фотография подушки">
                </picture>
@@ -444,8 +452,8 @@
                   </div>
                   <div class="price">
                   <div class="product-price">
-                     <p class="old-price">1000 ₽</p>
-                     <p class="new-price">800 ₽</p>
+                     <span class="old-price">1000 ₽</span>
+                     <span class="new-price">800 ₽</span>
                   </div>
                   <button type="button" class="buy-button">В магазин</button>
                   </div>
@@ -453,17 +461,17 @@
          </article>
 
          <article class="product">
-            <picture>
+            <picture >
                <source
                 media="(min-width: 1201px)"
                 srcset="images/shop-item-desk2.jpg">
                <source
-                media="(max-width: 1200px)"
+                media="(min-width: 641px) and (max-width: 1200px)"
                 srcset="images/shop-item-tablet2.jpg">
                 <source
                 media="(max-width: 640px)"
                 srcset="images/shop-item-mobile2.jpg">
-               <img
+               <img class="product-img"
                 src="images/shop-item-desk1.jpg"
                 alt="Фотография подушки">
                </picture>
@@ -474,7 +482,7 @@
                   </div>
                   <div class="price">
                   <div class="product-price">
-                     <p class="new-price">3500 ₽</p>
+                     <span class="new-price">3500 ₽</span>
                   </div>
                   <button type="button" class="buy-button">В магазин</button>
                   </div>
@@ -482,17 +490,17 @@
          </article>
 
          <article class="product">
-            <picture>
+            <picture >
                <source
                 media="(min-width: 1201px)"
                 srcset="images/shop-item-desk3.jpg">
                <source
-                media="(max-width: 1200px)"
+                media="(min-width: 641px) and (max-width: 1200px)"
                 srcset="images/shop-item-tablet3.jpg">
                 <source
                 media="(max-width: 640px)"
                 srcset="images/shop-item-mobile3.jpg">
-               <img
+               <img class="product-img"
                 src="images/shop-item-desk1.jpg"
                 alt="Фотография подушки">
                </picture>
@@ -503,8 +511,8 @@
                   </div>
                   <div class="price">
                   <div class="product-price">
-                     <p class="old-price">500 ₽</p>
-                     <p class="new-price">400 ₽</p>
+                     <span class="old-price">500 ₽</span>
+                     <span class="new-price">400 ₽</span>
                   </div>
                   <button type="button" class="buy-button">В магазин</button>
                   </div>
