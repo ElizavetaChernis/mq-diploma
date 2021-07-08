@@ -352,6 +352,7 @@ background-image: url("../svg/form-circle.svg")
   align-items: flex-end;
 
   padding: 15px;
+  position: relative;
 }
 
 .trend::after {
@@ -389,7 +390,9 @@ background-image: url("../svg/form-circle.svg")
 .trend-info {
   border: 3px solid rgba(181, 159, 91, 0.5);
   padding: 35px;
-  margin: 0 auto;
+  right: 15px;
+    left: 15px;
+    position: absolute;
 }
 
 .trend-name {
@@ -598,6 +601,10 @@ background-image: url("../svg/form-circle.svg")
   cursor: pointer;
 }
 
+.search-button:hover {
+  background-color: #927e41;
+}
+
 /* SUBSCRIPTION */
 
 .subscription-hint {
@@ -632,6 +639,10 @@ background-image: url("../svg/form-circle.svg")
   text-transform: uppercase;
   
   cursor: pointer;
+}
+
+.subscription-button:hover {
+  background-color: #927e41;
 }
 
 .subscription-container {
@@ -864,6 +875,11 @@ background-image: url("../svg/form-circle.svg")
   color: #999999;
   
   margin-bottom: 40px;
+}
+
+.copyright:hover {
+  color: #616161;
+
 }
 
 
@@ -1183,6 +1199,7 @@ background-image: url("../svg/form-circle.svg")
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
+    align-self: flex-end;
   }
 
   .menu-button {
@@ -1228,24 +1245,20 @@ background-image: url("../svg/form-circle.svg")
     display: none;
 }
 
-.menu-link-mobile {
-  display: block;
+.header-logo {
   width: 85%;
-  max-width: 300px;;
+  max-width: 300px;
+   display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30vh;
 }
 
-.header-logo-mobile
-{
-  
-}
-
-.menu-link {
-  display: none;
-}
 
 .container-header {
-  justify-content: flex-end;
+  flex-direction: column-reverse;
 }
+
 
 .welcome {
   display: flex;
@@ -1261,8 +1274,8 @@ background-image: url("../svg/form-circle.svg")
 margin-right: 0;
 font-size: 26px;
 line-height: 1.3;
-
-margin-top: 10px;
+padding: 0 15px;
+margin-top: 40px;
 }
 
 .section {
@@ -1391,6 +1404,14 @@ margin-bottom: 40px;
 .tag-link {
     padding: 5px 12px;
 }
+
+.product {
+    width: 100%;
+}
+
+.product-info {
+    max-width: 100%;
+  }
 
 .product-cards {
     max-width: 100%;
